@@ -1,10 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import './bootstrap.min.css'
 
 function App() {
   return (
     <div>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></link>
         <header className="header">
     <div className="container d-flex flex-column align-items-center">
       <img className="header__avatar" src="./images/avatar.png" alt="avatar"/>
