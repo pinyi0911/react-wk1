@@ -5,17 +5,17 @@ import imgs from "../json/imgs.json"
 
 function Home() {
   return (
-    <div className="main-layout">
+    <div className="maincontainer main-layout">
       <Header 
       className="layout-header"
       title="Name"
       slogan="Slogan"
       />
-      {/* <ImagesList className="layout-content" /> */}
-      <ImagesList img={imgs} className="layout-content" />
+      <ImagesList imgs={imgs} className="layout-content" />
       <Footer className="layout-footer" />
     </div>
   );
 }
 
 export default Home;
+//<div className="container main-layout"> container拿掉恢復正常

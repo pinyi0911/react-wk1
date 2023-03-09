@@ -1,7 +1,8 @@
-import 'bootstrap/dist/css/bootstrap.css';
+import 'antd/dist/reset.css';
 import './App.css';
 import Home from './pages/Home'
-
+// import'bootstrap/dist/css/bootstrap.min.css' 
+//刪掉bootstrap會再見
 function App() {
   return (
     <Home />

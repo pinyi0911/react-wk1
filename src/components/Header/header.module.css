@@ -1,41 +1,68 @@
 .header {
-  text-align: center;
+  background-color: #00979c;
+  height: 30vh;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.headerbox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.headerTitle {
-  color: white;
-  font-size: 1.3rem;
-  padding: 0;
-  padding-top: 1rem;
+.box {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
 }
 
-.headerTitle {
-  color: white;
-  font-size: 1.3rem;
-  padding: 0;
-  padding-top: 1rem;
-}
-
-@media (min-width: 768px) {
-  .headerTitle {
-    font-size: 1.8rem;
+@media screen and (min-width: 768px) {
+  .header {
+    height: 40vh;
+    font-size: 1rem;
   }
 }
 
-.headerSlogan {
-  color: white;
-  opacity: 0.6;
-  padding: 0;
-  margin: 0;
-  line-height: 0.8;
+.header__avatar {
+  width: 10rem;
+  height: 10rem;
 }
 
-.hrHeaderLine {
-  margin: 25px auto 30px;
-  padding: 0;
-  width: 100px;
-  border: 0;
-  border-top: solid 6px;
-  border-color: #6366f2;
-  opacity: 1;
+.header_title {
+  font-size: 3.25rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  
+}
+
+.header__slogan {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .header__avatar {
+    width: 14rem;
+    height: 14rem;
+  }
+
+  .header__title {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+
+  .header__slogan {
+    font-size: 1.75em;
+    text-transform: uppercase;
+    margin: 0;
+  }
 }

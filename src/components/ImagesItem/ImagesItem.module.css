@@ -1,0 +1,44 @@
+.image {
+    position: relative;
+  
+  }
+  .imagebox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image__layout {
+  
+    width: 100%;
+    background-color: #fff;
+    font-size: 1rem;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+  
+  }
+  
+  .image__link {
+    display: block;
+  }
+  
+  .image__style {
+    width: 100%;
+    display: block;
+  }
+  
+  .image_title {
+    color: white;
+    right: 2rem;
+    bottom: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: absolute;
+  }
