@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import ImagesList from "../components/ImagesList"
+import Description from "../components/Description"
 import Footer from "../components/Footer"
 import imgs from "../json/imgs.json"
 
@@ -12,6 +13,7 @@ function Home() {
       slogan="Slogan"
       />
       <ImagesList imgs={imgs} className="layout-content" />
+      <Description />
       <Footer className="layout-footer" />
     </div>
   );

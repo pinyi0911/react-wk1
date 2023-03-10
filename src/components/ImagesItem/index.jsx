@@ -1,14 +1,15 @@
+import styles from "./ImagesItem.module.css";
 export default function ImagesItem({ img }) {
     return (
 
         <section
-            className="image"
+            className={styles.image}
         >
             <div>
-                <a href="" className="image__link">
-                    <img src={img.image} alt="" className="image__style" />
+                <a href="" className={styles.image__link}>
+                    <img src={img.image} alt="" className={styles.image__style}/>
                 </a>
-                <p className="image_title">{img.text}</p>
+                <p className={styles.image_title}>{img.text}</p>
             </div>
         </section>
     
