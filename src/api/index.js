@@ -79,3 +79,23 @@ export const feedImgs = async () => {
     await setDoc(docRef, { ...img, id: docRef.id});
   });
 };
+
+
+export const getImgs = async () => {
+  let querySnapshot = await getDocs(imgsCollection);
+
+  // Convert the query to a json array.
+  let result = [];
+  querySnapshot.forEach(async (img) => {
+    await result.push(img.data());
+  });
+  console.log({ result });
+  return result;
+};
+
+export const getImgById = async ({ queryKey }) => {
+  const [id] = queryKey;
+  const docRef = await doc(db, "imgs", id);
+  const docSnap = await getDocs(docRef);
+  return docSnap.data();
+};
